@@ -1,0 +1,64 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario-cotacao {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 5px;
+    align-items: center;
+    padding: 2rem;
+    background-color: #323138;
+}
+
+.selects-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.selects-container select {
+    height: 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    border-style: none;
+    margin-bottom: 30px;
+}
+
+.troca-icon {
+    width: 3rem;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    cursor: pointer;
+}
+
+.valor-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.valor-container label input {
+    height: 3rem;
+    width: 80%;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+form button {
+    height: 3.3rem;
+    width: 80%;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./../../global.css">
+    <link rel="stylesheet" href="./../../css/cotacao/cotacao.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cotação</title>
 </head>
+
 <body>
-    <h1>Cotação de moedas</h1>
+    <div class="nav-container">
+        <h1 class="navbar">Cotação de moedas</h1>
+    </div>
+    <div class="form-container">
+        <form class="formulario-cotacao">
+            <div class="selects-container">
+                <fieldset>
+                    <label for="val_origem">Valor a converter</label>
+                    <select name="val_origem" id="val_origem" required> 
+                        <option disabled value="">Escolha uma moeda</option>
+                        <option value="BRL">Real Bresileiro (BRL)</option>
+                        <option value="EUR">Euro (EUR)</option>
+                        <option value="USD">Dolar Americano (USD)</option>
+                        <option value="USD">Bitcoin (BTC)</option>
+                    </select>
+                </fieldset>
+
+                <img onclick="troca()" class="troca-icon" src="./../../images/exchange.png" alt="alternate">
+
+                <fieldset>
+                    <label for="val_destino">Valor destino</label>
+                    <select name="val_origem" id="val_destino" required>
+                        <option disabled value="">Escolha uma moeda</option>
+                        <option value="BRL">Real Bresileiro (BRL)</option>
+                        <option value="EUR">Euro (EUR)</option>
+                        <option value="USD">Dolar Americano (USD)</option>
+                        <option value="USD">Bitcoin (BTC)</option>
+                    </select>
+                </fieldset>
+            </div>
+
+            <div class="valor-container">
+                <label for="valor">Valor a converter
+                    <input name="valor" type="number" placeholder="0,00" required><br>
+                </label>
+                <button type="submit" onclick="converter()">Converter</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="../../scripts/cotacao/cotacao.js"></script>
 </body>
+
 </html>

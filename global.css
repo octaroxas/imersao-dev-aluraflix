@@ -16,12 +16,14 @@ body {
     background-color: #3c0b8b;
     display: flex;
     padding-left: 8em;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 
 .navbar {
     max-width: 700px;
-    padding: 2vh;
-    
+    /**padding: 2vh;
+    */
 }
 
 p {
@@ -162,3 +164,4 @@ p {
     border-color: #360a7c;
     background-color: #0A0A0C;
 }
+
