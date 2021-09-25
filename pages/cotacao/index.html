@@ -24,7 +24,7 @@
                         <option value="BRL">Real Bresileiro (BRL)</option>
                         <option value="EUR">Euro (EUR)</option>
                         <option value="USD">Dolar Americano (USD)</option>
-                        <option value="USD">Bitcoin (BTC)</option>
+                        <option value="BTC">Bitcoin (BTC)</option>
                     </select>
                 </fieldset>
 
@@ -37,7 +37,7 @@
                         <option value="BRL">Real Bresileiro (BRL)</option>
                         <option value="EUR">Euro (EUR)</option>
                         <option value="USD">Dolar Americano (USD)</option>
-                        <option value="USD">Bitcoin (BTC)</option>
+                        <option value="BTC">Bitcoin (BTC)</option>
                     </select>
                 </fieldset>
             </div>
@@ -46,12 +46,17 @@
                 <label for="valor">Valor a converter
                     <input name="valor" type="number" placeholder="0,00" required><br>
                 </label>
-                <button type="submit" onclick="converter()">Converter</button>
+                <button onclick="getCotacao()">Converter</button>
             </div>
-
+            
         </form>
+
+        
     </div>
 
+    <div class="resultado" id="resultado">
+        sfghjk
+    </div>
     <script src="../../scripts/cotacao/cotacao.js"></script>
 </body>
 

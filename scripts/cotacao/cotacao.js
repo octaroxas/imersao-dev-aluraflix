@@ -27,9 +27,8 @@ function getCotacao() {
         if (response.erro) {
             document.getElementById('resultado').innerHTML = 'Não foi possível Converter';
         } else {
-            var data = response;
-            //document.getElementById('resultado').innerHTML = `<p>Cotacao: ${data.$.tipo.bid}</p>`
-            document.getElementById('resultado').innerHTML = `<p>Cotacao: ${data.$.tipo.bid}</p>`
+            var data = response[tipo];
+            document.getElementById('resultado').innerHTML = `<p>Cotacao: ${data.bid}</p>`
         }
     }
     request.send();
