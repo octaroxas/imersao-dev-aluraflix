@@ -1,3 +1,8 @@
+body {
+    font-family: monospace;
+    font-weight: bold;
+}
+
 .form-container {
     display: flex;
     justify-content: center;
@@ -54,6 +59,11 @@ fieldset {
     width: 80%;
     border-radius: 5px;
     padding-left: 20px;
+}
+
+.resultado {
+    text-align: center;
+    margin-top: 40px;
 }
 
 form button {
