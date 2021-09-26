@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="./../../css/cotacao/cotacao.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../scripts/cotacao/cotacao.js"></script>
     <title>Cotação</title>
 </head>
 
-<body>
+<body onload="getCotacoes()">
     <div class="nav-container">
         <h1 class="navbar">Cotação de moedas</h1>
     </div>
@@ -18,12 +19,12 @@
         <form class="formulario-cotacao">
             <div class="selects-container">
                 <fieldset>
-                    <label for="val_origem">Valor a converter</label>
+                    <label for="val_origem">Moeda de Origem</label>
                     <select name="val_origem" id="val_origem" required> 
                         <option disabled value="">Escolha uma moeda</option>
-                        <option value="BRL">Real Bresileiro (BRL)</option>
+                        <option value="BRL">Real Brasileiro (BRL)</option>
                         <option value="EUR">Euro (EUR)</option>
-                        <option value="USD">Dolar Americano (USD)</option>
+                        <option value="USD">Dólar Americano (USD)</option>
                         <option value="BTC">Bitcoin (BTC)</option>
                     </select>
                 </fieldset>
@@ -31,12 +32,12 @@
                 <img onclick="troca()" class="troca-icon" src="./../../images/exchange.png" alt="alternate">
 
                 <fieldset>
-                    <label for="val_destino">Valor destino</label>
-                    <select name="val_origem" id="val_destino" required>
+                    <label for="val_destino">Moeda de Destino </label>
+                    <select name="val_destino" id="val_destino" required>
                         <option disabled value="">Escolha uma moeda</option>
-                        <option value="BRL">Real Bresileiro (BRL)</option>
+                        <option value="BRL">Real Brasileiro (BRL)</option>
                         <option value="EUR">Euro (EUR)</option>
-                        <option value="USD">Dolar Americano (USD)</option>
+                        <option value="USD">Dólar Americano (USD)</option>
                         <option value="BTC">Bitcoin (BTC)</option>
                     </select>
                 </fieldset>
@@ -44,20 +45,17 @@
 
             <div class="valor-container">
                 <label for="valor">Valor a converter
-                    <input name="valor" type="number" placeholder="0,00" required><br>
+                    <input id="valor" name="valor" type="number" placeholder="0,00" required><br>
                 </label>
-                <button onclick="getCotacao()">Converter</button>
+                <button type="button" onclick="converter()">Converter</button>
             </div>
-            
         </form>
-
-        
     </div>
 
     <div class="resultado" id="resultado">
-        sfghjk
+        <p>Selecione as moedas acima, insira o valor desejado e clique em "Converter".</p>
     </div>
-    <script src="../../scripts/cotacao/cotacao.js"></script>
+
 </body>
 
 </html>
