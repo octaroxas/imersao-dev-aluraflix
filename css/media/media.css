@@ -1,0 +1,131 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    min-height: 400px;
+    /*background-image: url('https://image.flaticon.com/icons/png/512/201/201635.png');*/
+    background-image: url('../../images/f1.jpg');
+    background-color: #000000;
+    background-size: 170vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*
+    
+        font-family: 'Roboto Mono', monospace;
+    min-height: 400px;
+    background-image: url('https://image.flaticon.com/icons/png/512/201/201635.png');
+    background-image: url('../../images/f1.jpg');
+    background-color: #000000;
+    background-size: 100vh;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+.page-title {
+    color: #3f3e3e;
+    margin: 70 0 5px;
+}
+
+.page-subtitle {
+    color: #3f3e3e;
+    margin-top: 5px;
+}
+
+.page-logo {
+    width: 200px;
+    background-color: #949494;
+    padding: 1vh;
+    border-radius: 5px;
+}
+
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    color: #3f3e3e;
+    font-size: 10px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+input {
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    height: 3rem;
+    width: 4rem;
+    border-radius: 10px;
+    border-style: solid;
+    margin-bottom: 5px;
+}
+
+button {
+    width: 9rem;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: #F5DD1C;
+    color: #fff;
+    font-weight: bold;
+    border-style: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input:focus {
+    outline: none !important;
+    border: 2px solid #F5DD1C;
+    background-color: #f2efd8;
+}
+
+button:hover {
+    box-shadow: 0 0 10px #F5DD1C;
+}
+
+.result-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#result {
+    color: #ffffff;
+}
+
+.passou {
+    background-color: #17e294;
+    color: #fff;
+    text-align: center;
+    margin-top: 16px;
+    border-radius: 10px;
+    padding: 2vh;
+}
+
+.nao-passou {
+    background-color: #d15b57;
+    color: #fff;
+    text-align: center;
+    margin-top: 16px;
+    border-radius: 10px;
+    padding: 2vh;
+}
+
+p {
+    line-height: 25px;
+}
