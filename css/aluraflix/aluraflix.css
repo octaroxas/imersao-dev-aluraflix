@@ -6,71 +6,88 @@ body {
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-  }
-  
-  .container {
+}
+
+.container {
     text-align: center;
     padding: 20px;
-  }
-  
-  .page-title {
+}
+
+.page-title {
     color: #ffffff;
     margin: 0 0 5px;
-  }
-  
-  .page-subtitle {
+}
+
+.page-subtitle {
     color: #ffffff;
     margin-top: 5px;
-  }
-  
-  .page-logo {
+}
+
+.page-logo {
     width: 200px;
-  }
-  
-  .alura-logo {
+}
+
+.alura-logo {
     width: 40px;
     position: absolute;
     top: 10px;
     right: 10px;
-  }
-  
-  body > img {
+}
+
+body>img {
     margin: 0 10px;
-  }
-  
-  img {
+}
+
+img {
     max-height: 250px;
-  }
-  
-  h5,
-  a {
+}
+
+h5,
+a {
     color: #fff;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
-  }
-  
-  section {
+}
+
+section {
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
-  }
-  
-  section input {
+}
+
+section input {
     display: block;
     box-sizing: border-box;
     padding: 20px;
     width: 27rem;
-    height: 3rem;
+    height: 60px;
     border-radius: 5px;
     margin-bottom: 5px;
-  }
-  
-  section button {
+    font-family: monospace;
+    font-weight: bold;
+}
+
+input:focus {
+    outline: none !important;
+    border: 2px solid rgb(224, 71, 65);
+    /*box-shadow: 0 0 10px rgb(224, 71, 65);*/
+}
+
+section button {
+    cursor: pointer;
+    background-color: rgb(224, 71, 65);
+    border-style: none;
+    color: #fff;
+    font-weight: bold;
     width: 27rem;
-    height: 3rem;
+    height: 60px;
     border-radius: 5px;
-  }
-  
+    font-size: 15px;
+}
+
+section button:hover {
+    box-shadow: 0 0 10px rgb(224, 71, 65);
+}
