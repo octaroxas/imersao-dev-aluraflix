@@ -1,6 +1,28 @@
+*,
 body {
     font-family: monospace;
-    font-weight: bold;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    min-height: 400px;
+    background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-1-conversor-de-moedas.png");
+    background-color: #000000;
+    background-size: 100vh;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.container-logo {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-container {
@@ -8,6 +30,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .formulario-cotacao {
     margin-top: 10vh;
     display: flex;
@@ -47,7 +70,7 @@ fieldset {
     cursor: pointer;
 }
 
-.valor-container {
+.valor-container label {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -59,11 +82,28 @@ fieldset {
     width: 80%;
     border-radius: 5px;
     padding-left: 20px;
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+
+input:focus {
+    outline: none !important;
+    border: solid 2px rgb(50, 55, 221);
+    box-shadow: 0 0 10px #323138;
 }
 
 .resultado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     margin-top: 40px;
+}
+
+.resultado p {
+    background-color: #323138;
+    padding: 3vh;
+    border-radius: 10px;
 }
 
 form button {
@@ -71,4 +111,51 @@ form button {
     width: 80%;
     border-radius: 5px;
     cursor: pointer;
+    background-color: rgb(105, 100, 214);
+    font-weight: bold;
+    color: #fff;
+    font-family: monospace;
+}
+
+@media only screen and (max-width: 600px) {
+    .container-logo img {
+        width: 3rem;
+    }
+    .container img {
+        width: 20rem;
+    }
+    .selects-container,
+    .valor-container {
+        flex-direction: column;
+    }
+    .formulario-cotacao {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 80%;
+    }
+    .troca-icon {
+        margin-bottom: 25px;
+    }
+    .valor-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    label {
+        width: 100%;
+    }
+    .valor-container label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .valor-container label input {
+        width: 20rem;
+        height: 3.3rem;
+        text-align: center;
+    }
+    .valor-container label button {
+        width: 22rem;
+    }
 }

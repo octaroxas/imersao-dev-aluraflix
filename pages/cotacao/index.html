@@ -12,15 +12,29 @@
 </head>
 
 <body onload="getCotacoes()">
-    <div class="nav-container">
-        <h1 class="navbar">Cotação de moedas</h1>
+
+    <div class="container-logo">
+        <a href="https://alura.com.br/" target="_blank">
+            <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+        </a>
     </div>
+
+    <div class="container">
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""><br><br>
+        <h1 class="page-title">
+            Conversor de moedas
+        </h1>
+    </div>
+
+    </div>
+
+
     <div class="form-container">
         <form class="formulario-cotacao">
             <div class="selects-container">
                 <fieldset>
                     <label for="val_origem">Moeda de Origem</label>
-                    <select name="val_origem" id="val_origem" required> 
+                    <select name="val_origem" id="val_origem" required>
                         <option disabled value="">Escolha uma moeda</option>
                         <option value="BRL">Real Brasileiro (BRL)</option>
                         <option value="EUR">Euro (EUR)</option>
@@ -46,8 +60,8 @@
             <div class="valor-container">
                 <label for="valor">Valor a converter
                     <input id="valor" name="valor" type="number" placeholder="0,00" required><br>
+                    <button type="button" onclick="converter()">Converter</button>
                 </label>
-                <button type="button" onclick="converter()">Converter</button>
             </div>
         </form>
     </div>

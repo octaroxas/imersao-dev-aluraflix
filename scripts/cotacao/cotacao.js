@@ -3,11 +3,11 @@ let cot_data;
 function sleep(milliseconds) {
     var start = new Date().getTime();
     for (var i = 0; i < 1e7; i++) {
-      if ((new Date().getTime() - start) > milliseconds){
-        break;
-      }
+        if ((new Date().getTime() - start) > milliseconds) {
+            break;
+        }
     }
-  }
+}
 
 function troca() {
 
@@ -45,10 +45,10 @@ function converter() {
 
     var tipo = `${val_origem}${val_destino}`
     var valor = document.getElementById("valor").value;
-    
+
     console.log(cot_data);
     data = cot_data[tipo];
-    document.getElementById('resultado').innerHTML = `<p>Resultado da conversão: ${(data.bid*valor).toFixed(2)}</p>`
+    document.getElementById('resultado').innerHTML = `<p>Resultado da conversão: ${(data.bid * valor).toFixed(2)}</p>`
 }
 
 //https://medium.com/@braulliovg/consumindo-api-de-consulta-de-endere%C3%A7o-via-javascript-c83b7ad9976e
