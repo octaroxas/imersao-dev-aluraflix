@@ -1,10 +1,13 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="../../css/super-trunfo/super-trunfo.css">
+    <link rel="stylesheet" href="./../../css/super-trunfo/super-trunfo.css">
     <script src="../../scripts/super-trunfo/super-trunfo.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
     <title>
-        Imersão Dev - Aula 07
+        Imersão Dev - Aula 08
     </title>
 </head>
 
@@ -13,16 +16,29 @@
         <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-super-trunfo.png" class="page-logo"
             alt="">
         <h1 class="page-title">Super Trunfo</h1>
-
         <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
-
-        <div id="carta-sorteada"></div>
-
+        <a class="link-btn" href="" >Jogar de novo</a>
         <form id="form">
-            <h2>Escolha o seu atributo</h2>
-            <div class="opcoes" id="opcoes"></div>
-            <button type="button" id="btnJogar" onclick="jogar()" disabled="false">Jogar</button>
-            <div id="resultado"></div> 
+
+            <div class="wrapper">
+                <div>
+                    <div id="carta-jogador">
+                        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+                            style=" width: inherit; height: inherit; position: absolute;">
+                        <h3></h3>
+                    </div>
+                </div>
+                <img class="versus"
+                    src="../../images/versus.png">
+                <div>
+                    <div id="carta-maquina" class="carta"><img
+                            src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+                            style=" width: inherit; height: inherit; position: absolute;"></div>
+                </div>
+            </div>
+            <button class="button-jogar" type="button" id="btnJogar" onclick="jogar()" disabled="false">Jogar</button>
+            <div id="resultado"></div>
+
         </form>
     </div>
 </body>
