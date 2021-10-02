@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src="./index.js"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="global.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,13 +13,19 @@
 <body>
 
     <div class="card-container">
-        <div class="card">
+
+        <div id="card-perfil" class="card">
             <div>
                 <img class="foto-perfil" src="./images/profile.png" alt="">
             </div>
             <div class="descricao">
-                <h1>Octacilio C. de Almeida</h1>
-                <p>Projetos desenvolvidos orgulhosamente durante a Imersão Dev_ da Alura<br> De 13 a 24 de setembro!</p>
+                <h1 class="nome">
+                    Octacilio C. de Almeida
+                    <div class="tema">
+                        <button type="button" onclick="mudaTema()" class="botao-tema">Alterar Tema</button>
+                    </div>
+                </h1>
+                <p>Projetos desenvolvidos durante a Imersão Dev_ da Alura<br> De 13 a 24 de setembro!</p>
                 <div class="redes">
                     <label for="">
                         <a target="blank" href="https://github.com/octaroxas">
@@ -42,12 +49,10 @@
                 </div>
             </div>
 
-
         </div>
     </div>
 
-
-    <div class="container-projects">
+    <div id="projetos" class="container-projects">
 
         <div class="card-codepens">
             <div class="pen-item">
