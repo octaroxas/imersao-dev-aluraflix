@@ -62,6 +62,13 @@ p {
 }
 
 @media only screen and (min-width: 801px) {
+
+    .foto-perfil {
+        width: 10rem;
+        margin-right: 2rem;
+        margin-left: 1rem;
+    }
+
     .card {
         display: flex;
         justify-content: center;
@@ -127,6 +134,12 @@ p {
 }
 
 @media only screen and (max-width: 800px) {
+
+    .foto-perfil {
+        width: 10rem;
+        margin-top: 2vh;
+    }
+
     .card {
         display: flex;
         justify-content: center;
@@ -155,9 +168,9 @@ p {
         margin: 0px;
     }
 
-    .imagem-container img {
+    /* .imagem-container img {
         margin: 0px;
-    }
+    } */
 
 
     .container-projects {
@@ -224,6 +237,15 @@ p {
         margin-bottom: 10px;
         
     }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4vh;
+    }
+
+
 }
 
 .card {
@@ -305,3 +327,42 @@ p {
     border-width: 2px;
 }
 
+.link-btn-codepen:hover {
+    background-color: #360a7c;
+    border-style: solid;
+    border-color: #360a7c;
+    background-color: #0A0A0C;
+}
+
+.redes {
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.redes a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vh;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.redes a:hover {
+    color: #3c0b8b;
+    background-color: #0A0A0C;
+}
+
+.redes img {
+    max-width: 20px;
+}
+
+.redes label {
+    display: flex;
+    flex-direction: column;
+}
