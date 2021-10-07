@@ -1,3 +1,46 @@
+/* Inicio css profile */
+
+.card-profile-2 {
+    margin-right: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #1B1A1F;
+    border-radius: 10px;
+    margin-bottom: 2vh;
+    border-style: solid;
+    border-color: rgb(48, 47, 54);
+    border-width: 2px;
+    max-width: 15rem;
+    max-height: 25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-profile-img-2 {
+    width: 10rem;
+    height: 10rem;
+}
+
+.card-profile-descricao-2 {
+    
+}
+
+.profile-nome {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.card-profile-descricao-2 p {
+    font-size: 10pt;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+
+/* Inicio css cards */
+
 .card-2-link {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
@@ -35,3 +78,70 @@
     font-family: 'Roboto', sans-serif;
     color: #ffff    ;
 }
+
+
+
+.nav-bar {
+    padding: 2vh 2vh;
+}
+
+nav {
+    width: 100%;
+    background-color: #570EF2;
+    position: fixed;
+}
+
+main {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5rem;
+}
+
+/* Inicio css card com tecnologias */
+
+.card-tecnologias {
+    margin-right: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #1B1A1F;
+    border-radius: 10px;
+    margin-bottom: 2vh;
+    border-style: solid;
+    border-color: rgb(48, 47, 54);
+    border-width: 2px;
+    max-width: 15rem;
+    max-height: 25rem;
+    justify-content: left;
+    align-items: left;
+}
+
+.tec-item {
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.tec-nome {
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.add-tec-link {
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    background-color: #2C2C2C;
+    color: #fff;
+    font-weight: bold;
+}
+
+.add-tec-link:hover {
+    opacity: 80%;
+}
+
