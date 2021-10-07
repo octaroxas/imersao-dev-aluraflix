@@ -1,0 +1,37 @@
+.card-2-link {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #ffff;
+    text-align: left;
+}
+
+.card-2 {
+    display: flex;
+    background-color: #1B1A1F;
+    border-radius: 10px;
+    margin-bottom: 2vh;
+    border-style: solid;
+    border-color: rgb(48, 47, 54);
+    border-width: 2px;
+}
+.card-2:hover {   
+    border-style: solid;
+    border-color: slateblue;
+    border-width: 2px;
+}
+
+.card-2-nome {
+    font-size: 24px;
+    margin-bottom: 2vh;
+}
+
+.card-2-descricao {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.texto-descricao {
+    font-family: 'Roboto', sans-serif;
+    color: #ffff    ;
+}

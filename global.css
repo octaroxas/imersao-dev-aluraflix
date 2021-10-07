@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -326,17 +328,17 @@ p {
     background-color: #0A0A0C;
 }
 
-.card:hover {
+/* .card:hover {
     border-style: solid;
     border-color: slateblue;
     border-width: 2px;
-}
+} */
 
-.container-projects:hover {
+/* .container-projects:hover {
     border-style: solid;
     border-color: slateblue;
     border-width: 2px;
-}
+} */
 
 .link-btn-codepen:hover {
     background-color: #360a7c;
