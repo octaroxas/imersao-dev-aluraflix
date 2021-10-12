@@ -1,6 +1,12 @@
 // Lsitagem de projetos
 const projetos = [
     {
+        imagem: "./images/projetos/5.png",
+        titulo: "Imersão DEV_ Alura",
+        descricao: "Projetos desenvolvidos durante a Imersão DEV_ da Alura.",
+        link: "https://octacilio-dev.netlify.app"
+    },
+    {
         imagem: "./images/projetos/alura-quiz 1.png",
         titulo: "AluraFlix",
         descricao: "Projeto desenvolvido com Next.js na Imersão Alura.",
@@ -63,8 +69,24 @@ var tecnologias = [
         imagem: "./images/tecnologias/logo-typescript 1.png"
     },
     {
-        nome: "Node.js",
-        imagem: "./images/tecnologias/logo-node-png 1.png"
+        nome: "HTML5",
+        imagem: "./images/tecnologias/html5.png"
+    },
+    {
+        nome: "CSS3",
+        imagem: "./images/tecnologias/css3.png"
+    },    
+    {
+        nome: "PHP",
+        imagem: "./images/tecnologias/php.png"
+    },
+    {
+        nome: "Git",
+        imagem: "./images/tecnologias/git.png"
+    },
+    {
+        nome: "MySQL",
+        imagem: "./images/tecnologias/mysql.png"
     }
 ]
 
