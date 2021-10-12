@@ -39,7 +39,7 @@ function listarProjetos() {
         var novoprojeto = `
             <a class="card-2-link" target="blank" href="${item.link}">
                 <div class="card-2">
-                    <img src="${item.imagem}" alt="">
+                    <img class="img-project" src="${item.imagem}" alt="">
                     <div class="card-2-descricao">
                         <h3 class="card-2-nome">${item.titulo}</h3>
                         <div class="texto-descricao">

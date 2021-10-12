@@ -1,7 +1,7 @@
 /* Inicio css profile */
 
 .card-profile-2 {
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -11,8 +11,8 @@
     border-style: solid;
     border-color: rgb(48, 47, 54);
     border-width: 2px;
-    max-width: 15rem;
-    max-height: 25rem;
+    max-width: 30rem;/*
+    max-height: 25rem; */
     justify-content: center;
     align-items: center;
 }
@@ -41,6 +41,18 @@
 
 /* Inicio css cards */
 
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5rem;
+}
+
+.prof-tec-container {
+    margin-right: 1rem;
+}
+
 .card-2-link {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
@@ -56,6 +68,7 @@
     border-style: solid;
     border-color: rgb(48, 47, 54);
     border-width: 2px;
+    
 }
 .card-2:hover {   
     border-style: solid;
@@ -79,41 +92,21 @@
     color: #ffff    ;
 }
 
-
-
-.nav-bar {
-    padding: 2vh 2vh;
-}
-
-nav {
-    width: 100%;
-    background-color: #570EF2;
-    position: fixed;
-}
-
-main {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 5rem;
-}
-
 /* Inicio css card com tecnologias */
 
 .card-tecnologias {
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
     padding: 2rem;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
     background-color: #1B1A1F;
     border-radius: 10px;
     margin-bottom: 2vh;
     border-style: solid;
     border-color: rgb(48, 47, 54);
     border-width: 2px;
-    max-width: 15rem;
+    max-width: 30rem;
     /*max-height: 25rem;*/
     justify-content: left;
     align-items: left;
@@ -150,3 +143,60 @@ main {
     opacity: 80%;
 }
 
+/* inicio css lisat de projetos */
+
+.container-projects-2 {
+    border-style: solid;
+    border-color: rgb(64, 61, 84);
+    border-width: 2px;
+    margin-bottom: 20px;
+    /* margin-top: 20px; */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #222127d4;
+    width: 100%;
+}
+
+/* Inicio dos media query*/
+
+@media only screen and (max-width: 1170px) {
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-profile-2 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    .card-tecnologias {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        flex-direction: row;
+        max-width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 620px) {
+    .card-2 {
+        flex-direction: column;
+    }
+
+    .img-project {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .card-2-descricao {
+        flex-direction: column;
+    }
+}

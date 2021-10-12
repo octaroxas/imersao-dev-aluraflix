@@ -6,35 +6,42 @@
 }
 
 body {
+    max-width: 80%;
+    margin: auto;
+    background-color: #0A0A0C;
+    color: #fff;
+}
+
+/* body {
     display: flex;
     flex-direction: column;
     /* align-items: center;
-    justify-content: center; */
+    justify-content: center; 
     flex: 1;
     background-color: #0A0A0C;
     color: #fff;
 
-    /*background-image: url('./images/purple-bg.png');
+    background-image: url('./images/purple-bg.png');
     */
     /* background-size: cover;
     background-position: center top;
-    background-repeat: repeat; */
-}
+    background-repeat: repeat; 
+} */
 
-.nav-container {
+/* .nav-container {
     font-family: monospace;
     background-color: #3c0b8b;
-    display: flex;
+    /* display: flex;
     padding-left: 8em;
     padding-top: 2vh;
-    padding-bottom: 2vh;
+    padding-bottom: 2vh; 
 }
 
 .navbar {
-    max-width: 700px;
+    /* max-width: 700px; */
     /**padding: 2vh;
-    */
-}
+    
+} */
 
 .card-codepens {
     background-color: #22212700;
