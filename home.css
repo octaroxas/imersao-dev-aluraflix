@@ -27,6 +27,7 @@
 }
 
 .profile-nome {
+    margin-top: 2rem;
     font-size: 2rem;
     text-align: center;
 }
@@ -199,6 +200,10 @@ main {
 
     main {
         margin-top: 1rem;
+    }
+
+    .profile-nome {
+        margin-top: 2rem;
     }
 
     .card-2 {
