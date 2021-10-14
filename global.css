@@ -10,6 +10,12 @@ body {
     margin: auto;
     background-color: #0A0A0C;
     color: #fff;
+
+    background-image: url('./images/purple-bg.png');
+    
+    background-size: cover;
+    background-position: center top;
+    background-repeat: repeat; 
 }
 
 /* body {
@@ -97,6 +103,7 @@ p {
         border-radius: 10px;
         display: flex;
         flex-direction: column;
+
         background-color: #222127d4;
         width: 40em;
     }
@@ -420,6 +427,7 @@ p {
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-    background-image: url('./images/purple-bg.png');
+    margin-bottom: 2REM;
+    /* background-image: url('./images/purple-bg.png'); */
 }
 

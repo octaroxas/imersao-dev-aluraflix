@@ -1,12 +1,6 @@
 // Lsitagem de projetos
 const projetos = [
     {
-        imagem: "./images/projetos/5.png",
-        titulo: "Imersão DEV_ Alura",
-        descricao: "Projetos desenvolvidos durante a Imersão DEV_ da Alura.",
-        link: "https://octacilio-dev.netlify.app"
-    },
-    {
         imagem: "./images/projetos/alura-quiz 1.png",
         titulo: "AluraFlix",
         descricao: "Projeto desenvolvido com Next.js na Imersão Alura.",

@@ -2,9 +2,11 @@ function mudaTema() {
 
     var cardPerfil = document.getElementById('card-perfil')
     var projetos = document.getElementById('projetos');
+    var corpo = document.getElementById('corpo')
 
     cardPerfil.classList.toggle('light')
     projetos.classList.toggle('light')
+    corpo.classList.toggle('light')
 
     // if (cardPerfil.classList) {
     //     cardPerfil.classList.add("light");
