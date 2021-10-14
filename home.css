@@ -166,6 +166,10 @@ main {
     .container-projects-2 {
         margin-left: 1rem;
     }
+
+    .card-tecnologias {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 1170px) {
